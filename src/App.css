@@ -1,0 +1,11 @@
+.active-category{
+  border-bottom: 4px solid var(--primary-color);
+}
+
+.border{
+  border: 1px solid black;
+}
+
+.w-30{
+  width: 30%
+}
