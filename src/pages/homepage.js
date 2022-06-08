@@ -6,7 +6,7 @@ const Homepage = () => {
     console.log(quizDB)
     return(
         <>
-            <div className={`container center-block grid grid-3-columns gap-l light-border m3-top`}>
+            <div className={`container center-block flex gap-xl justify-center light-border m3-top`} style = {{width: "50%"}}>
                 {renderQuizCard(quizDB)}
             </div>
         </>

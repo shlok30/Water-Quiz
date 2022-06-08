@@ -7,8 +7,10 @@ const QuizContextProvider = ({children}) => {
 
     const [quizDB, setQuizDB] = useState([...quizzes])
 
+    const [selectedCategory,setSelectedCategory] = useState("")
+
     return(
-        <QuizContext.Provider value = {{quizDB}}>
+        <QuizContext.Provider value = {{quizDB,selectedCategory}}>
             {children}
         </QuizContext.Provider>
     )
