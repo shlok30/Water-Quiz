@@ -16,6 +16,8 @@ const QuizPage = () => {
 
     const options = currentQuizObject.mcqs[questionIndex].options
 
+    console.log(questionIndex === currentQuizObject.mcqs.length - 1 )
+
     if(answerList.find(quiz => quiz.quizID === quizID)){
         return(
             <>
@@ -34,9 +36,9 @@ const QuizPage = () => {
                         </div>
         
                         <div className="m5-top flex space-between padding-s">
-                            <button className={`btn secondary-link ${questionIndex === 0 ? "hide" : ""}`} onClick={() => setQuestionIndex(prevIndex => prevIndex - 1)}>Prev</button>
-                            <button className={`btn primary-link ${questionIndex === currentQuizObject.mcqs.length - 1 ? "hide" : ""}`} onClick = {() => setQuestionIndex(prevIndex => prevIndex + 1)}>Next</button>
-                            <Link className = {`btn primary-link ${(questionIndex === currentQuizObject.mcqs.length - 1 ) && (answerList.find(quiz => quiz.quizID === quizID).answers.length === currentQuizObject.mcqs.length ) ? "" : "hide"}`} to = {`/result/${quizID}`}>Results</Link>  
+                            <button className={`btn secondary-link no-background no-shadow ${questionIndex === 0 ? "hide" : ""}`} onClick={() => setQuestionIndex(prevIndex => prevIndex - 1)}>Prev</button>
+                            <button className={`btn primary-link no-background no-shadow ${questionIndex === currentQuizObject.mcqs.length - 1 ? "hide" : ""}`} onClick = {() => setQuestionIndex(prevIndex => prevIndex + 1)}>Next</button>
+                            <Link className = {`btn primary-link no-background no-shadow ${(questionIndex === currentQuizObject.mcqs.length - 1 ) && (answerList.find(quiz => quiz.quizID === quizID).answers.length === currentQuizObject.mcqs.length ) ? "" : "hide"}`} to = {`/result/${quizID}`}>Results</Link>  
                             
                         </div>
         
