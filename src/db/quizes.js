@@ -42,7 +42,7 @@ export const quizzes = [
           _id: uuid(),
           question: "Who was the actor playing Ironman",
           options: ["Tobey Maguire", "Andrew Garfield", "Tom Holland", "Robert Downey Jr."],
-          answer: "Tobey Maguire",
+          answer: "Robert Downey Jr.",
         },
         {
           _id: uuid(),
@@ -62,7 +62,7 @@ export const quizzes = [
           _id: uuid(),
           question: "What is Batman's real name",
           options: ["Ip Man", "Bruce Windu", "Mace Windu", "Bruce Wayne"],
-          answer: "Ip Man",
+          answer: "Bruce Wayne",
         },
         {
           _id: uuid(),
