@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 import { useParams,Link } from "react-router-dom"
 import { useQuiz } from "../context/quiz-context"
 import calculateScore from "../general-functions/calculateScore"
@@ -8,7 +7,7 @@ const QuizPage = () => {
 
     const {quizID} = useParams()
 
-    const {quizDB,questionIndex,answerList,setQuestionIndex,setAnswerList} = useQuiz()
+    const {quizDB,questionIndex,answerList,setQuestionIndex} = useQuiz()
 
     const currentQuizObject = quizDB.find(quiz => quiz["_id"] === quizID)
 

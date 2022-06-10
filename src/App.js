@@ -2,6 +2,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Homepage from './pages/homepage';
 import QuizPage from './pages/quiz-page';
+import ResultPage from './pages/result';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path = "/" element = {<Homepage />} />
         <Route path = "/quiz/:quizID" element = {<QuizPage />} />
+        <Route path = "/result/:quizID" element = {<ResultPage />} />
       </Routes>
     </div>
   );
