@@ -1,9 +1,13 @@
+import { useEffect } from "react"
 import { useQuiz } from "../context/quiz-context"
 import renderQuizCard from "../general-functions/renderQuizCard"
 
 const Homepage = () => {
-    const {quizDB,selectedCategory,setSelectedCategory} = useQuiz()
+    const {quizDB,selectedCategory,setSelectedCategory,setQuestionIndex} = useQuiz()
     const filteredQuizes = selectedCategory ? quizDB.filter((quiz) => quiz.catergoryName === selectedCategory) : [...quizDB]
+
+    useEffect(() => setQuestionIndex(0),[])
+
     return(
         <>
             <div className="container center-block m-xl-top" style = {{width: "50%"}}>

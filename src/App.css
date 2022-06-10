@@ -13,3 +13,15 @@
 .m-xl-top{
   margin-top: 6rem;
 }
+
+.hide{
+  display: none;
+}
+
+.no-background{
+  background: none;
+}
+
+.no-shadow{
+  box-shadow: none;
+}
