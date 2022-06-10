@@ -16,8 +16,6 @@ const QuizPage = () => {
 
     const options = currentQuizObject.mcqs[questionIndex].options
 
-    console.log("Question Index",questionIndex)
-
     if(answerList.find(quiz => quiz.quizID === quizID)){
         return(
             <>

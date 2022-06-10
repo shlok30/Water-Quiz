@@ -1,6 +1,6 @@
 
 const calculateScore = (answerList,quizID) => {
-    console.log(answerList)
+    
     if(answerList.find(quiz => quiz.quizID === quizID).answers.length > 0){
         let sum = 0
         let answersOfCurrentQuizList
